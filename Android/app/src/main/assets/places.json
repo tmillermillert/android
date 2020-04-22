@@ -1,0 +1,34 @@
+{
+  "places":[
+    {
+      "name" : "ASU-Poly1",
+      "description" : "Home of ASU's Software Engineering Programs",
+      "category" : "School",
+      "address-title" : "ASU Software Engineering",
+      "address-street" : "7171 E Sonoran Arroyo Mall Peralta Hall 230\nMesa\nAZ\n85212",
+      "elevation" : 1384.0,
+      "latitude" : 33.306388,
+      "longitude" : -111.679121
+    },
+    {
+      "name" : "ASU-Poly2",
+      "description" : "Home of ASU's Software Engineering Programs",
+      "category" : "School",
+      "address-title" : "ASU Software Engineering",
+      "address-street" : "7171 E Sonoran Arroyo Mall Peralta Hall 230\nMesa\nAZ\n85212",
+      "elevation" : 1384.0,
+      "latitude" : 33.306388,
+      "longitude" : -111.679121
+    },
+    {
+      "name" : "ASU-Poly3",
+      "description" : "Home of ASU's Software Engineering Programs",
+      "category" : "School",
+      "address-title" : "ASU Software Engineering",
+      "address-street" : "7171 E Sonoran Arroyo Mall Peralta Hall 230\nMesa\nAZ\n85212",
+      "elevation" : 1384.0,
+      "latitude" : 33.306388,
+      "longitude" : -111.679121
+    }
+  ]
+}

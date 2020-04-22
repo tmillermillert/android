@@ -1,0 +1,38 @@
+<resources>
+    <string name="app_name">appname</string>
+    <string name="name">Name</string>
+    <string name="description">Description</string>
+    <string name="category">Category</string>
+    <string name="addressTitle">Address Title</string>
+    <string name="addressStreet">Address Street</string>
+    <string name="city">City</string>
+    <string name="state">State</string>
+    <string name="country">Country</string>
+    <string name="zipCode">Zip Code</string>
+    <string name="elevation">Elevation</string>
+    <string name="latitude">Latitude</string>
+    <string name="longitude">Longitude</string>
+    <string name="place_description">PLACE_DESCRIPTION</string>
+    <string name="add">add</string>
+    <string name="edit">edit</string>
+    <string name="save">Save</string>
+    <string name="cancel">Cancel</string>
+    <string name="index">Index</string>
+    <string name="requestCode">Request_Code</string>
+    <string name="place_library_string">PLACE_LIBRARY</string>
+    <string name="delete">Delete</string>
+    <string name="is_dialog_open">IS_DIALOG_OPEN</string>
+    <string name="delete_position">DELETE_POSITION</string>
+    <string name="function">Function</string>
+    <string name="start_location">Start Location</string>
+    <string name="end_location">End Location</string>
+    <string name="submit">Submit</string>
+    <string name="result">Result</string>
+    <string-array
+        name="functions_array">
+        <item
+            >Great Circle Spherical Distance</item>
+        <item
+            >Initial Heading</item>
+    </string-array>
+</resources>
