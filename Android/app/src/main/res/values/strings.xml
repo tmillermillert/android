@@ -28,6 +28,7 @@
     <string name="end_location">End Location</string>
     <string name="submit">Submit</string>
     <string name="result">Result</string>
+    <string name="back">Back</string>
     <string-array
         name="functions_array">
         <item

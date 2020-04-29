@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:scrollbars="none"
     android:layout_weight="1">
-    <TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
-        xmlns:tools="http://schemas.android.com/tools"
+    <TableLayout
         android:id="@+id/placeDescriptionTable"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
@@ -13,6 +13,28 @@
         android:scrollbarAlwaysDrawVerticalTrack="true"
         android:scrollbars="vertical"
         tools:context=".PlaceDescriptionActivity">
+
+        <TableRow
+            android:id="@+id/nameRow"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/nameLabel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0"
+                android:text="@string/name" />
+
+            <EditText
+                android:id="@+id/nameValue"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="@string/name"
+                android:inputType="textPersonName"
+                android:textSize="14sp" />
+        </TableRow>
 
         <TableRow
             android:id="@+id/descriptionRow"
@@ -105,94 +127,6 @@
         </TableRow>
 
         <TableRow
-            android:id="@+id/cityRow"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent">
-
-            <TextView
-                android:id="@+id/cityLabel"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_weight="0"
-                android:text="@string/city" />
-
-            <EditText
-                android:id="@+id/cityValue"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:ems="10"
-                android:hint="@string/city"
-                android:inputType="textPersonName"
-                android:textSize="14sp" />
-        </TableRow>
-
-        <TableRow
-            android:id="@+id/stateRow"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent">
-
-            <TextView
-                android:id="@+id/stateLabel"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_weight="0"
-                android:text="@string/state" />
-
-            <EditText
-                android:id="@+id/stateValue"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:ems="10"
-                android:hint="@string/state"
-                android:inputType="textPersonName"
-                android:textSize="14sp" />
-        </TableRow>
-
-        <TableRow
-            android:id="@+id/countryRow"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent">
-
-            <TextView
-                android:id="@+id/countryLabel"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_weight="0"
-                android:text="@string/country" />
-
-            <EditText
-                android:id="@+id/countryValue"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:ems="10"
-                android:hint="@string/country"
-                android:inputType="textPersonName"
-                android:textSize="14sp" />
-        </TableRow>
-
-        <TableRow
-            android:id="@+id/zipCodeRow"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent">
-
-            <TextView
-                android:id="@+id/zipCodeLabel"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_weight="0"
-                android:text="@string/zipCode" />
-
-            <EditText
-                android:id="@+id/zipCodeValue"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:ems="10"
-                android:hint="@string/zipCode"
-                android:inputType="textPersonName"
-                android:textSize="14sp" />
-        </TableRow>
-
-        <TableRow
             android:id="@+id/elevationRow"
             android:layout_width="match_parent"
             android:layout_height="match_parent">
@@ -255,28 +189,6 @@
                 android:ems="10"
                 android:hint="@string/longitude"
                 android:inputType="numberDecimal"
-                android:textSize="14sp" />
-        </TableRow>
-
-        <TableRow
-            android:id="@+id/nameRow"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent">
-
-            <TextView
-                android:id="@+id/nameLabel"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_weight="0"
-                android:text="@string/name" />
-
-            <EditText
-                android:id="@+id/nameValue"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:ems="10"
-                android:hint="@string/name"
-                android:inputType="textPersonName"
                 android:textSize="14sp" />
         </TableRow>
 

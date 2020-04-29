@@ -14,6 +14,7 @@ import android.widget.TextView;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.constraintlayout.widget.Placeholder;
 
+import java.text.NumberFormat;
 import java.util.ArrayList;
 
 public class FunctionActivity extends AppCompatActivity {
@@ -126,13 +127,17 @@ public class FunctionActivity extends AppCompatActivity {
         Double x = 0.0;
         PlaceDescription startPD = get(start);
         PlaceDescription endPD = get(end);
+        NumberFormat myFormat = NumberFormat.getInstance();
+        myFormat.setGroupingUsed(true);
 
         if(functionSpinner.getSelectedItemPosition() == 0){
             x = startPD.greatCircleSphericalDistance(startPD, endPD);
+            resultText.setText("Result: " + myFormat.format(x) + " m");
         }
         else{
             x = startPD.initialHeading(startPD, endPD);
+            resultText.setText("Result: " + myFormat.format(x) + " \u00B0");
         }
-        resultText.setText("Result: " + String.valueOf(x));
+
     }
 }

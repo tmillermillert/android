@@ -27,13 +27,9 @@ public class PlaceDescriptionActivity extends
     private EditText category;
     private EditText addressTitle;
     private EditText addressStreet;
-    private EditText city;
-    private EditText state;
-    private EditText zipCode;
     private EditText elevation;
     private EditText longitude;
     private EditText latitude;
-    private EditText country;
 
     private int requestCode;
 
@@ -47,10 +43,7 @@ public class PlaceDescriptionActivity extends
         category = (EditText) findViewById(R.id.categoryValue);
         addressTitle = (EditText) findViewById(R.id.addressTitleValue);
         addressStreet = (EditText) findViewById(R.id.addressStreetValue);
-        city = (EditText) findViewById(R.id.cityValue);
-        state = (EditText) findViewById(R.id.stateValue);
-        country = (EditText) findViewById(R.id.countryValue);
-        zipCode = (EditText) findViewById(R.id.zipCodeValue);
+
         elevation = (EditText) findViewById(R.id.elevationValue);
         longitude = (EditText) findViewById(R.id.longitudeValue);
         latitude = (EditText) findViewById(R.id.latitudeValue);
@@ -65,52 +58,7 @@ public class PlaceDescriptionActivity extends
             description.setText(placeDescription.description);
             category.setText(placeDescription.category);
             addressTitle.setText(placeDescription.addressTitle);
-            String array[] = placeDescription.addressStreet.split("\n");
-            int num = array.length;
-            switch (num){
-                case 5:
-                    addressStreet.setText(array[0]);
-                    city.setText(array[1]);
-                    state.setText(array[2]);
-                    zipCode.setText(array[3]);
-                    country.setText(array[4]);
-                    break;
-                case 4:
-                    addressStreet.setText(array[0]);
-                    city.setText(array[1]);
-                    state.setText(array[2]);
-                    zipCode.setText(array[3]);
-                    country.setText(" ");
-                    break;
-                case 3:
-                    addressStreet.setText(array[0]);
-                    city.setText(array[1]);
-                    state.setText(array[2]);
-                    zipCode.setText(" ");
-                    country.setText(" ");
-                    break;
-                case 2:
-                    addressStreet.setText(array[0]);
-                    city.setText(array[1]);
-                    state.setText(" ");
-                    zipCode.setText(" ");
-                    country.setText(" ");
-                    break;
-                case 1:
-                    addressStreet.setText(array[0]);
-                    city.setText(" ");
-                    state.setText(" ");
-                    zipCode.setText(" ");
-                    country.setText(" ");
-                    break;
-                case 0:
-                    addressStreet.setText(array[0]);
-                    city.setText(" ");
-                    state.setText(" ");
-                    zipCode.setText(" ");
-                    country.setText(" ");
-                    break;
-            }
+            addressStreet.setText(placeDescription.addressStreet);
 
             elevation.setText(String.valueOf(placeDescription.elevation));
             longitude.setText(String.valueOf(placeDescription.longitude));
@@ -200,23 +148,9 @@ public class PlaceDescriptionActivity extends
         if(addressStreet.getText().length() < 1){
             addressStreet.setText("Unknown");
         }
-        if(city.getText().length() < 1){
-            city.setText("Unknown");
-        }
-        if(state.getText().length() < 1){
-            state.setText("Unknown");
-        }
-        if(zipCode.getText().length() < 1){
-            zipCode.setText("Unknown");
-        }
-        if(country.getText().length() < 1){
-            country.setText("Unknown");
-        }
-        placeDescription.addressStreet = addressStreet.getText().toString() + "\n" +
-                city.getText().toString() + "\n" +
-                state.getText().toString() + "\n" +
-                zipCode.getText().toString() + "\n" +
-                country.getText().toString() + "\n";
+
+        placeDescription.addressStreet = addressStreet.getText().toString();
+
         if (elevation.getText().toString().length() >= 1){
             placeDescription.elevation = Double.valueOf(elevation.getText().toString());
         }

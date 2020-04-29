@@ -85,7 +85,8 @@ public class PlaceDescription implements Serializable {
         Double y = Math.sin(lambda2-lambda1) * Math.cos(phi2);
         Double x = Math.cos(phi1)*Math.sin(phi2) -
                 Math.sin(phi1)*Math.cos(phi2)*Math.cos(lambda2-lambda1);
-        Double brng = Math.atan2(y, x) * 180 / Math.PI;
+        Double theta = Math.atan2(y, x);
+        Double brng = (theta * 180 / Math.PI + 360) % 360;
         return brng;
     }
 
