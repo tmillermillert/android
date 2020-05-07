@@ -30,10 +30,10 @@ import java.sql.SQLException;
  *
  * Purpose: helper for accessing the places database
  * This class accesses the database from the bundle if it does not
- * already exist in the
+ * already exist.
  *
- * @author Marcus Miller mtmille5@asu.edu
- * @version April 21, 2020
+ * @author Marcus Miller mailto:mtmille5@asu.edu
+ * @version April, 2020
  */
 public class PlacesDB extends SQLiteOpenHelper {
     private static final boolean debugon = true;

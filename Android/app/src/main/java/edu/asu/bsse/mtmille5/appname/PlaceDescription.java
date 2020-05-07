@@ -15,12 +15,12 @@ package edu.asu.bsse.mtmille5.appname;
  * See the License for the specific language governing permissions and
  * limitations under the License.
  *
- * Purpose: For our purposes a place is a simplified holder for information about geographic places of interest, such as a waypoint
+ * Purpose: A place is a simplified holder for information about geographic places of interest, such as a waypoint
  *
  * Ser423 Mobile Applications
  * see http://pooh.poly.asu.edu/Mobile
  * @author Marcus Miller mailto:mtmille5@asu.edu
- * @version March 2020
+ * @version April 2020
  */
 import com.google.gson.annotations.SerializedName;
 
